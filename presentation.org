@@ -22,9 +22,9 @@ Text
 Here is a code sample
 
 
-#+BEGIN_SRC python
-def foo():
-    return 42
+#+BEGIN_SRC javascript
+var mod = angular.module('llamas');
+mod.factory( . . . );
 #+END_SRC
 
 
