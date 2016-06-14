@@ -1,0 +1,64 @@
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: solarized
+#+REVEAL_HLEVEL: 999
+#+REVEAL_EXTRA_CSS: ./presentation.css
+#+REVEAL_PLUGINS: (highlight)
+
+#+TITLE: Title of Presentation
+#+AUTHOR: Author Q. McNamerson
+#+EMAIL: author@domain.tld
+#+DATE: 12-12-2012
+
+* Title of slide
+Text
+* Slide with code
+Here is a code sample
+
+
+#+BEGIN_SRC python
+def foo():
+    return 42
+#+END_SRC
+
+
+* A slide with subslides
+** Bullet 1
+
+Useful info
+
+
+** Bullet 2
+More useful info
+
+** Etc.
+Such useful information that you'll question your need to ever learn anything else ever again
+
+* A slide with an image
+[[./images/myimage.png]]
+
+#+ATTR_HTML: :height 200%, :width 200%
+[[./images/myimage.png]]
+
+* A slide with a table
+#+ATTR_HTML: :width 100%
+| column_title1  | column_title2 |
+|----------------+---------------|
+| a              | b             |
+| a              | b             |
+| a              | b             |
+
+And you can style the table like this:
+
+#+BEGIN_SRC css
+.reveal table th, .reveal table td {
+    text-align: center;
+    border: 1px solid white;
+}
+#+END_SRC
